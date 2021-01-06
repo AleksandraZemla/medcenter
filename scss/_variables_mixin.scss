@@ -1,0 +1,142 @@
+//colors
+$bg-color: #fff;
+$bg-color-dark: #305e87;
+$dark-color: #005C9A;
+$dark-color2: #1c6ca4;
+$medium-color: #1DA0D6;
+$light-color: #1AD5F7;
+$accent-color: #5ADA75;
+
+// Fonts
+$main-font: 'Roboto', sans-serif;
+$title-font: 'Roboto Condensed', sans-serif;
+
+//Media Query
+$breakpoints: (
+   mobile-small: (max-width: 320px),
+   smartphone: (min-width: 321px),
+   tablet: (min-width: 768px),
+   desktop: (min-width: 1200px),
+   desktop-large: (min-width: 1600px),
+);
+
+@mixin mq($breakpoint){
+    $size: map-get($breakpoints, $breakpoint);
+    @if ($size) {
+        @media #{$size} {
+            @content;
+        }
+    }
+    @else {
+        @error '"#$breakpoint" - Brak wartości Media Query'
+    }
+};
+
+//section title
+@mixin title-text {
+    font-family: $title-font;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 2.8rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+//subtitle especially white
+@mixin inner-title {
+    margin: 1rem;
+    font-size: 1.7rem;
+}
+
+//green line
+@mixin line {
+    width: 100px;
+    height: 3px;
+    background-color: $accent-color;
+}
+
+@mixin list-item-big {
+    position: relative;
+    line-height: 1.8rem;
+    &::before {
+        content: '';
+        position: absolute;
+        left: -25px;
+        top: 9px;
+        height: 0.8rem;
+        width: 0.8rem;
+        border-radius: 50%;
+        background-color: $accent-color;
+    }
+}
+
+@mixin list-item-medium {
+    position: relative;
+    line-height: 1.3rem;
+    &::before {
+        content: '';
+        position: absolute;
+        left: -25px;
+        top: 5px;
+        height: 0.7rem;
+        width: 0.7rem;
+        border-radius: 50%;
+        background-color: $accent-color;
+    }
+}
+
+/*
+@mixin list-item ($size, $line-height, $top, $height) {
+    @if($size == "medium") {
+        $line-height: 1.3rem;
+        $top: 5px;
+        $height: 0.7rem;
+    } @else if ($size == "big") {
+        $line-height: 1.8rem;
+        $top: 9px;
+        $height: 0.8rem;
+    }
+    position: relative;
+    line-height: $line-height;
+    &::before {
+        content: '';
+        position: absolute;
+        left: -25px;
+        top: $top;
+        height: $height;
+        width: $height;
+        border-radius: 50%;
+        background-color: $accent-color;
+    }
+}
+*/
+
+%grid-container {
+    width: 100%;
+    @include mq(tablet) {
+        display: grid;
+        align-content: center;
+        grid-template-columns: 1fr 1fr;
+        align-self: initial;
+        column-gap: 10px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    @include mq(desktop) {
+        width: 80%;
+    }
+}
+
+%triangle {
+    content: url('assets/trojkat.png');
+    position: absolute;
+    top: -1rem;
+    left: 41%;
+    z-index: 4;
+    @include mq(tablet) {
+        left: 45%;
+        }
+    @include mq(desktop) {
+    left: 47%;
+    }
+}

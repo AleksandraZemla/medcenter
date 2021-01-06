@@ -1,0 +1,82 @@
+.treatment {
+    width: 100%;
+    padding-bottom: 20px;
+    &__container {
+        @extend %grid-container;
+        gap: 45px;
+    }
+    &__item {
+        position: relative;
+        @include mq(tablet) {
+            &::before {
+                position: absolute;
+                top: -3px;
+                left: 2px;
+                z-index: -1;
+                content: '';
+                height: 40%;
+                width: 30%;
+                background-color: $accent-color;
+                opacity: 0.3;
+            }
+            &::after {
+                position: absolute;
+                bottom: 2px;
+                right: 3px;
+                z-index: -1;
+                content: '';
+                height: 40%;
+                width: 30%;
+                background-color: $dark-color2;
+                opacity: 0.3;
+            }
+            transition: transform 0.3s linear;
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        margin: -2px 0;
+        @include mq(desktop) {
+            transform: scale(0.95);
+            margin: 0;
+        }
+    }
+    &__description {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 98%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        position: relative;
+        z-index: 1;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        text-align: center;
+        padding: 10px;
+        color: #fff;
+        @include mq(desktop) {
+            font-size: 1.3rem;
+        }
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background-color: $dark-color2;
+            opacity: 0.8;
+        }
+    }
+}
+

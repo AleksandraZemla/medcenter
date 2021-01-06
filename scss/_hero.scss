@@ -1,0 +1,61 @@
+.intro-mobile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 75px);
+    padding-top: 75px;
+    background-image: linear-gradient($dark-color, $bg-color-dark, $medium-color);
+    @include mq(tablet) {
+        display: none;
+    }
+    &__title {
+        @include title-text;
+        font-size: 1.9rem;
+        color: $light-color;
+        @include mq(desktop) {
+            font-size: 2rem;
+        }
+    }
+    &__subtitle {
+        @include title-text;
+        font-size: 1.4rem;
+        color: #fff;
+    }
+    &__img {
+        max-height: 25%;
+    }
+    .btn {
+        z-index: 3;
+        text-decoration: none;
+    }
+    &__circles {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 130px;
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    text-align: center;
+    background-color: $medium-color;
+    color: #fff;
+    text-shadow: 1px 1px $dark-color;
+    @include mq(tablet) {
+        min-height: 200px;
+        font-size: 1.3rem;
+        line-height: 3rem;
+    }
+}

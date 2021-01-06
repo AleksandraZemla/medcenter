@@ -1,0 +1,130 @@
+.autodiagnosis {
+    width: 100%;
+    &__header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 90px;
+        padding: 30px 5px;
+        @include title-text;
+        line-height: 1.7rem;
+        font-size: 1.3rem;
+        color: #fff;
+        background-color: $bg-color-dark;
+        &::after {
+            content: url('assets/trojkat.png');
+            position: absolute;
+            z-index: 4;
+            bottom: -36px;
+            left: 41%;
+            @include mq(tablet) {
+                left: 15%;
+                }
+            @include mq(desktop) {
+            left: 23%;
+            }
+        }
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        @include mq(tablet) {
+            flex-direction: row;
+        }
+        @include mq(desktop) {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+    &__picture {
+        position: relative;
+        width: 350px;
+        height: auto;
+    }
+    &__choice {
+        position: absolute;
+        background-color: #1DA0D6; 
+        opacity: 0.35;
+        border-radius: 50%;
+        border: none;
+        &:focus {
+            background-color: $dark-color;
+            opacity: 0.5;
+        }
+        @include mq(desktop) {
+            &:hover {
+                background-color: $dark-color;
+            }
+        }
+        &--ankle {
+            width: 70px;
+            height: 70px;
+            top: 130px;
+            left: 140px;
+        }
+        &--achilles {
+            width: 40px;
+            height: 75px;
+            top: 110px;
+            left: 90px;
+            transform: rotate(22deg);
+        }
+        &--heel {
+            width: 40px;
+            height: 75px;
+            top: 175px;
+            left: 88px;
+            transform: rotate(125deg);
+        }
+        &--instep {
+            width: 50px;
+            height: 60px;
+            top: 200px;
+            left: 190px;
+            transform: rotate(150deg);
+        }
+        &--mtp {
+            width: 50px;
+            height: 50px;
+            top: 270px;
+            left: 203px;
+        }
+        &--forefoot {
+            width: 65px;
+            height: 30px;
+            top: 250px;
+            left: 90px;
+        }
+        &--toes {
+            width: 35px;
+            height: 36px;
+            top: 285px;
+            left: 120px;
+        }
+    }
+    &__text {
+        text-align: center;
+        padding: 2rem 5px;
+        line-height: 1.8rem;
+    }
+    &__effect {
+        text-align: center;
+        line-height: 1.4rem;
+        @include mq(tablet) {
+            margin-top: 40px;
+        }
+        li {
+            &::before {
+                @include list-item-medium;
+            };
+        } 
+        p {
+            font-weight: bold;
+            padding: 10px 5px 5px;
+        }
+    }
+}

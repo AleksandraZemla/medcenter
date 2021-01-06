@@ -1,0 +1,75 @@
+
+.team {
+    width: 100%;
+    margin-top: 30px;
+    padding: 5px 0 30px;
+/*    background-size: cover;
+    background-position: center;
+    @include mq(tablet) {
+        background-image: url(assets/zespol-tlo.jpg);
+    }
+*/
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        @include mq(desktop-large) {
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.person {
+    flex-basis: 28%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    @include mq(desktop) {
+        max-width: 280px;
+    }
+    &__img {
+        max-width: 320px;
+        @include mq(desktop) {
+            max-width: 280px;
+        }
+    }
+    &__name {
+        width: 100%;
+        padding: 0.5rem;
+        background-color: $dark-color2;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 1.3rem;
+        text-align: center;
+        span {
+            text-transform: none;
+            font-style: italic; 
+        }
+    }
+    &__offer {
+        width: 80%;
+        margin: 10px 0;
+        padding: 7px;
+        line-height: 1.2rem;
+    }
+    &__offer-item {
+        position: relative;
+        font-size: 15px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: -16px;
+            top: 6px;
+            height: 0.5rem;
+            width: 0.5rem;
+            border-radius: 50%;
+            background-color: $accent-color;
+            }
+        }
+    }

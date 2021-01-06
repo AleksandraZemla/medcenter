@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Centrum Ortopedii i Fizjoterapii Stopy i Stawu Skokowego">
+    <meta property="og:image" content="assets/centrum-stopy-pasja.jpg">
+    <link rel="stylesheet" href="reset-css.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Centrum Ortopedii i Fizjoterapii Stopy</title>
+    <meta name="description" content="Centrum medyczne skoncentrowane na leczeniu problemów stopy i stawu skokowego. Ortopedia. Fizjoterapia. Zaufaj naszemu 10-letniemu doświadczeniu!">
+</head>
+<body>
+    <div class="main">
+        <nav class="nav">
+            <a href="#"><img src="assets/logo.png" alt="" class="nav__logo"></a>
+            <div class="nav__container">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#problem" class="nav__link">Co leczymy</a></li>
+                    <li class="nav__item"><a href="#diagnosis" class="nav__link">Diagnostyka</a></li>
+                    <li class="nav__item"><a href="#treatment" class="nav__link">Leczenie</a></li>
+                    <li class="nav__item"><a href="#team" class="nav__link">Zespół</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Kontakt</a></li>
+                </ul>
+            </div>
+            <button class="hamburger">
+                <span class="hamburger__icon"></span>
+            </button>
+        </nav>
+        <div class="slider-container">
+            <div id="slider7" class="slides">
+                <div class="intro">
+                    <h1 class="intro__title">Centrum <br> Ortopedii i fizjoterapii</h1>
+                    <h2 class="intro__subtitle">stopy i stawu skokowego</h2>
+                    <a href="#team"><button class="btn">Umów wizytę</button></a>
+                </div>
+                <nav role="pagination" class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </nav>
+                <div class="slide">
+                    <figure>
+                        <img class="hidden" src="assets/konsultacje-ortopedyczne.jpg" alt="Ortopeda ból stopy">
+                    </figure>
+                    <div class="slide__description">
+                        <h3 class="slide__header">Konsultacje ortopedyczne</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <figure>
+                    <img class="hidden" src="assets/operacje-stopy.jpg" alt="Operacje stopy">
+                    </figure>
+                    <div class="slide__description">
+                    <h3 class="slide__header">Chirurgia stopy</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <figure>
+                    <img class="hidden" src="assets/fizjoterapia-stopy.jpg" alt="Rehabilitacja stopy">
+                    </figure>
+                    <div class="slide__description">
+                    <h3 class="slide__header">Fizjoterapia stopy</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <figure>
+                    <img class="hidden" src="assets/podologia-sportowa.jpg" alt="Podolog sportowy">
+                    </figure>
+                    <div class="slide__description">
+                    <h3 class="slide__header">Podologia sportowa</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="intro-mobile">
+            <img src="assets/intro-cricles.png" alt="Ortopeda stopy" class="intro-mobile__circles">
+            <div class="intro-mobile__text">
+                <h1 class="intro-mobile__title">Centrum <br> Ortopedii i fizjoterapii</h1>
+                <h2 class="intro-mobile__subtitle">stopy i stawu skokowego</h2>
+            </div>
+            <img src="assets/stopa-intro.svg" alt="Leczenie chorób stopy, zabiegi operacyjne, fizjoterapia, wkładki ortopedyczne" class="intro-mobile__img">
+            <a class="btn" href="#team">Umów wizytę</a>
+        </div>
+        <div class="about">
+            <p>Jesteśmy zespołem ortopedów i fizjoterapeutów koncentrujących się
+            na leczeniu problemów ortopedycznych stopy i stawu skokowego</p>
+        </div>
+        <div class="offer">
+            <p class="section-title section-title--triangle">Oferujemy</p>
+            <div class="offer__img">
+                <div class="offer__description">Konsultacje ortopedyczne</div>
+                <img src="assets/konsultacje-ortopedyczne-s.jpg" alt="Ortopeda ból stopy">
+            </div>
+            <div class="offer__img">
+                <div class="offer__description">Chirurgia stopy i stawu skokowego</div>
+                <img src="assets/operacje-stopy-s.jpg" alt="Zabiegi operacyjne stopy">
+            </div>
+            <div class="offer__img">
+                <div class="offer__description">Fizjoterapia podologiczna</div>
+                <img src="assets/fizjoterapia-stopy-s.jpg" alt="Rehabilitacja stopy i stawu skokowego">
+            </div>
+            <div class="offer__img">
+                <div class="offer__description">Podologia sportowa</div>
+                <img src="assets/podologia-sportowa-s.jpg" alt="Podologia sportowa">
+            </div>
+        </div>
+        <p class="section-title">Co nas <span class="underline">wyróżnia?</span></p>
+        <div class="flex-container">
+            <div class="feature">
+                <img src="assets/stopa-nieb.svg" alt="Leczenie stopy" class="feature__icon">
+                <h3 class="feature__title">Wąski zakres specjalizacji</h3>
+                <p class="feature__text">
+                    Posiadamy ugruntowane doświadczenie w diagnostyce i leczeniu różnorodnych schorzeń 
+                    i urazów stopy i stawu skokowego.
+                </p>
+                <p class="feature__text">
+                    Znajdujemy skuteczne rozwiązania także w rzadziej występujących patologiach.
+                </p>
+            </div>
+            <div class="feature">
+                <img src="assets/stopa-nieb.svg" alt="Dobry specjalista od stopy" class="feature__icon">
+                <h3 class="feature__title">Autentyczność i profesjonalizm</h3>
+                <p class="feature__text">
+                    Nasza historia to lata poświęcone rozwijaniu wiedzy i praktycznych umiejętności 
+                    opartych na najnowszych doniesieniach naukowych. </p>
+                <p class="feature__text">Skupiamy się na niesieniu prawdziwej 
+                    pomocy zgodnie z etyką zawodu medycznego. 
+                </p>
+            </div>
+            <div class="feature">
+                <img src="assets/stopa-nieb.svg" alt="Fizjoterapeuta ortopeda ból stopy" class="feature__icon">
+                <h3 class="feature__title">Pasja i zaangażowanie</h3>
+                <p class="feature__text">
+                    Uzyskane efekty leczenia i uśmiechy na twarzach naszych Pacjentów 
+                    stanowią dla nas źródło motywacji do dalszego rozwoju. 
+                </p>
+                <p class="feature__text">
+                    Pasja, szacunek i zaufanie to wartości scalające nasz zespół.
+                </p>
+            </div>
+        </div>
+        <p class="section-title" id="problem">W czym pomagamy</p>
+        <div class="grid-container">
+            <div class="problem problem--1">
+                <h2 class="problem__title">Wady stóp i zniekształcenia palców u dzieci i dorosłych</h2>
+                <ul class="problem__list">
+                    <li class="problem__item">ustalamy możliwe przyczyny rozwoju wady lub zniekształcenia</li>
+                    <li class="problem__item">określamy ryzyko powikłań i zalecamy działania profilaktyczne </li>
+                    <li class="problem__item">analizujemy objawy i progres zniekształcenia</li>
+                    <li class="problem__item">w razie łagodnych dolegliwości proponujemy postępowanie zachowawcze</li>
+                    <li class="problem__item">w przypadku obiektywnych wskazań rozważamy leczenie operacyjne 
+                        umożliwiające trwałą korekcję deformacji</li>
+                </ul>
+            </div>
+            <div class="problem-space">
+                <div class="problem-picture problem-picture--11">
+                    <div class="problem-picture__title"><p>Koślawość pięt <br>płaskostopie podłużne</div>
+                </div>
+                <div class="problem-picture problem-picture--12">
+                    <div class="problem-picture__title">Haluksy<br>Płaskostopie poprzeczne</div>
+                </div>
+                <div class="problem-picture problem-picture--13">
+                    <div class="problem-picture__title">Stopa wydrążona <br>Stopa końsko-szpotawa</div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="problem problem--2">
+                <h2 class="problem__title">Stopa sportowca</h2>
+                <div class="problem__column">
+                    <h4 class="problem__subtitle">chcesz bezpiecznie uprawiać sport</h4>
+                    <ul class="problem__list">
+                        <li class="problem__item">oceniamy biomechanikę stóp w relacji do całego ciała</li>
+                        <li class="problem__item">uzupełniamy diagnostykę komputerowym badaniem stóp </li>
+                        <li class="problem__item">opracowujemy strategie zmniejszające ryzyko przeciążeń</li>
+                        <li class="problem__item">wdrażamy terapię manualną i ćwiczenia funkcjonalne</li>
+                        <li class="problem__item">wykonujemy wkładki do butów sportowych</li>
+                    </ul>
+                </div>
+                <div class="problem__column">
+                    <h4 class="problem__subtitle">odniosłeś kontuzję</h4>
+                    <ul class="problem__list">
+                        <li class="problem__item">diagnozujemy stopień i rozległość uszkodzenia</li>
+                        <li class="problem__item">wdrażamy optymalne leczenie skracające okres rekonwalescencji i zapewniające dobre wyniki odległe</li>
+                        <li class="problem__item">umożliwiamy bezpieczny powrót do codziennych aktywności i sportu</li>
+                        <li class="problem__item">opracowujemy strategie przeciwdziałające nawrotom kontuzji</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="problem-space">
+                <div class="problem-picture problem-picture--21">
+                    <div class="problem-picture__title">zaburzenia biomechaniczne</div>
+                </div>
+                <div class="problem-picture problem-picture--22">
+                    <div class="problem-picture__title">urazy i kontuzje sportowe</div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="problem problem--3">
+                <h2 class="problem__title">Nietypowe dolegliwości</h2>
+                <ul class="problem__list">
+                    <li class="problem__item">poszerzamy diagnostykę obrazową i biomechaniczną</li>
+                    <li class="problem__item">oceniamy wyniki badań  laboratoryjnych</li>
+                    <li class="problem__item">analizujemy problem pod kątem rzadziej występujących schorzeń i chorób układowych wpływających na stan stopy</li>
+                    <li class="problem__item">planujemy dalsze postępowanie</li>
+                    <li class="problem__item">w razie potrzeby kierujemy do odpowiedniego specjalisty (np. neurologa, diabetologa, chirurga ogólnego)</li>
+                    <li class="problem__item">uczestniczymy w kompleksowym procesie leczenia</li>
+                </ul>
+            </div>
+            <div class="problem-space">
+                <div class="problem-picture problem-picture--31">
+                    <div class="problem-picture__title">przewlekły ból stopy <br> drętwienie palców</div>
+                </div>
+                <div class="problem-picture problem-picture--32">
+                    <div class="problem-picture__title"> guzki na stopie<br>gangliony</div>
+                </div>
+            </div>
+        </div>
+        <section class="autodiagnosis">
+            <div class="autodiagnosis__header"><p>Kliknij na bolesny obszar stopy, aby dowiedzieć się, co może być przyczyną dolegliwości</p></div>
+            <div class="autodiagnosis__container">
+                <div class="autodiagnosis__picture">
+                    <img src="assets/zdiagnozuj-bol-stopy.jpg" alt="przyczyny bólu stopy" class="autodiagnosis__img">
+                    <button class="autodiagnosis__choice autodiagnosis__choice--ankle"></button>
+                    <button class="autodiagnosis__choice autodiagnosis__choice--achilles"></button>
+                    <button class="autodiagnosis__choice autodiagnosis__choice--heel"></button>
+                    <button class="autodiagnosis__choice autodiagnosis__choice--instep"></button>
+                    <button class="autodiagnosis__choice autodiagnosis__choice--mtp"></button>
+                    <button class="autodiagnosis__choice autodiagnosis__choice--forefoot"></button>
+                    <button class="autodiagnosis__choice autodiagnosis__choice--toes"></button>
+                </div>
+                <div class="autodiagnosis__effect"><p>Tutaj pojawi się odpowiedź :)<p></div>
+            </div>
+            <div class="autodiagnosis__text">
+                <p>Pamiętajmy o tym, że możliwych przyczyn bólu stopy jest o wiele więcej. </p>
+                <p>Aby ustalić właściwe rozpoznanie konieczne jest przeprowadzenie precyzyjnej diagnostyki. </p>
+            </div>
+        </section>
+        <section class="diagnosis">
+            <p class="section-title section-title--white" id="diagnosis">Diagnostyka</p>
+            <div class="diagnosis__container">
+                <div class="diagnosis__item"> 
+                    <img src="assets/badanie-usg-stopy-usg-stawu-skokowego.jpg" alt="USG stopy stawu skokowego" class="diagnosis__img">
+                    <div class="diagnosis__description">
+                        <h3 class="diagnosis__title">USG stopy, USG stawu skokowego</h3>
+                        <ul class="diagnosis__text">
+                            <li>bezinwazyjne i bezpieczne badanie wykonywane na miejscu </li>
+                            <li>nowoczesny aparat USG dedykowany diagnostyce ortopedycznej</li>
+                            <li>ocena ściegien mięśni, więzadeł, pozostałych tkanek miękkich oraz obrysów kostnych. </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="diagnosis__item"> 
+                    <img src="assets/analiza-badan-rtg-mri.jpg" alt="Analiza zdjęć RTG, wyników rezonansu magnetycznego stopy" class="diagnosis__img">
+                    <div class="diagnosis__description">
+                        <h3 class="diagnosis__title">Analiza RTG, MRI, TK</h3>
+                        <ul class="diagnosis__text">
+                            <li>analiza wyników badań obrazowych w relacji do objawów klinicznych</li>
+                            <li>zlecamy jedynie badania niezbędne do postawienia diagnozy</li>
+                            <li>zawsze oceniamy obrazy RTG, MRI, TK - nie opieramy się tylko na gotowych opisach </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="diagnosis__item"> 
+                    <img src="assets/badanie-manualne-stopy.jpg" alt="Badanie manualne stopy" class=" diagnosis__img">
+                    <div class="diagnosis__description">
+                        <h3 class="diagnosis__title">Badanie manualne</h3>
+                        <ul class="diagnosis__text">
+                            <li>ocena zakresu ruchomości w stawach</li>
+                            <li>ocena oporu końcowego, gry stawowej</li>
+                            <li>specyficzne testy strukturalne</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="diagnosis__item"> 
+                    <img src="assets/ocena-biomechaniczna.jpg" alt="Ocena biomechaniki stopy" class=" diagnosis__img">
+                    <div class="diagnosis__description">
+                        <h3 class="diagnosis__title">Ocena biomechaniczna</h3>
+                        <ul class="diagnosis__text">
+                            <li>ocena ustawienia stóp w relacji do postawy ciała</li>
+                            <li>analiza funkcjonalnej pronacji i supinacji</li>
+                            <li>analiza chodu i biegu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="treatment" id="treatment">
+            <p class="section-title section-title--triangle" id="treatment">Leczenie zachowawcze</p>
+            <div class="treatment__container">
+                <div class="treatment__item">
+                    <div class="treatment__description">
+                        <h3 class="treatment__title">Osocze bogatopłytkowe PRP</h3>
+                    </div>
+                        <img src="assets/osocze-prp.jpg" alt="Leczenie czynnikami wzrostu PRP" class="treatment__img">
+                </div>
+                <div class="treatment__item">
+                    <img src="assets/terapia-manualna.jpg" alt="Terapia manualna" class="treatment__img">
+                    <div class="treatment__description">
+                        <h3 class="treatment__title">Terapia manualna</h3>
+                    </div>
+                </div>
+                <div class="treatment__item">
+                    <img src="assets/trening-funkcjonalny.jpg" alt="Ćwiczenia stóp" class="treatment__img">
+                    <div class="treatment__description">
+                        <h3 class="treatment__title">Trening funkcjonalny</h3>
+                    </div>
+                </div>
+                <div class="treatment__item">
+                    <img src="assets/wkladki-ortopedyczne.jpg" alt="Wkładki ortopedyczne" class="treatment__img">
+                    <div class="treatment__description">
+                        <h3 class="treatment__title">Wkładki ortopedyczne</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="treatment">
+            <p class="section-title section-title--triangle">Leczenie operacyjne</p>
+            <div class="treatment__container">
+                <div class="treatment__item">
+                    <img src="assets/zabiegi-naprawcze-rekonstrukcyjne.jpg" alt="Rekonstrukcje chrząstki, naprawa więzadeł stawu skokowego" class="treatment__img">
+                    <div class="treatment__description">
+                        <h3 class="treatment__title">Zabiegi naprawcze i rekonstrukcyjne <br> Leczenie urazów sportowych</h3>
+                    </div>
+                </div>
+                <div class="treatment__item">
+                    <img src="assets/zabiegi-operacyjne.jpg" alt="Operacje palucha koślawego, operacje płaskostopia" class="treatment__img">
+                    <div class="treatment__description">
+                        <h3 class="treatment__title">Operacje haluksów, płaskostopia <br> Pozostałe zabiegi korekcyjne</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team">
+            <p class="section-title" id="team"><span class="underline">Zespół</span></p>
+            <div class="team__container">
+                <div class="person">
+                    <div class="person__img">
+                        <img src="assets/lekarz-ortopeda.jpg" alt="Lekarz ortopeda" class="person__img">
+                        <div class="person__info"></div>
+                    </div>
+                    <div class="person__name">
+                        <p>dr n. med. Jacek Poznański</p>
+                        <span>ortopeda</span>
+                    </div>
+                    <div class="person__offer">
+                        <ul class="person__offer-list">
+                            <li class="person__offer-item">konsultacje ortopedyczne</li>
+                            <li class="person__offer-item">badania USG</li>
+                            <li class="person__offer-item">zabiegi operacyjne</li>
+                        </ul>
+                    </div>
+                    <button class="btn">Umów wizytę</button>
+                </div>
+                <div class="person">
+                    <div class="person__img">
+                        <img src="assets/fizjoterapeuta-1.jpg" alt="Fizjoterapeuta" class="person__img">
+                        <div class="person__info"></div>
+                    </div>
+                    <div class="person__name">
+                        <p>mgr Monika Zalewska</p>
+                        <span>fizjoterapeutka</span>
+                    </div>
+                    <div class="person__offer">
+                        <ul class="person__offer-list">
+                            <li class="person__offer-item">terapia manualna</li>
+                            <li class="person__offer-item">trening funkcjonalny</li>
+                            <li class="person__offer-item">wkładki ortopedyczne</li>
+                        </ul>
+                    </div>
+                    <button class="btn">Umów wizytę</button>
+                </div>
+                <div class="person">
+                    <div class="person__img">
+                        <img src="assets/fizjoterapeuta-2.jpg" alt="Fizjoterapeuta" class="person__img">
+                        <div class="person__info"></div>
+                    </div>
+                    <div class="person__name">
+                        <p>mgr Damian Nowak</p>
+                        <span>fizjoterapeuta sportowy</span>
+                    </div>
+                    <div class="person__offer">
+                        <ul class=person__offer-list>
+                            <li class="person__offer-item">trening funkcjonalny</li>
+                            <li class="person__offer-item">analiza biomechaniki biegu</li>
+                            <li class="person__offer-item">wkładki ortopedyczne</li>
+                        </ul>
+                    </div>
+                    <button class="btn">Umów wizytę</button>
+                </div>
+            </div>
+        </section>
+        <div class="cooperation">
+            <p class="cooperation__title">Współpraca:</p>
+            <a href="http://ortopediaonline.pl/" target="_blank"><img src="assets/ortopedia-online.png" alt="Ortopedia Online" class="cooperation__logo"></a>
+        </div>
+        <div class="contact" id="contact">
+            <div class="contact__text">
+                <p class="contact__paragraph">Aleksandra Zemła</p>
+                <p class="contact__phone">
+                    <a class="contact__phone" href="tel: +48 790 788 321">tel. +48 790 788 321</a>
+                </p>
+            </div>
+            <div class="contact__photo"></div>
+        </div>
+        <footer class="footer">
+            <p class="footer__text">Copyright &copy Aleksandra Zemła <p>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+    <script src="comp.js"></script>
+    <script src="slider.js"></script>
+    <script>
+        (function () {
+          new Slider("#slider7 .slide").options({
+              nav: "#slider7 nav.dots span",
+              pause: false,
+          }).init();
+        })();
+    </script>
+</body>
+</html>

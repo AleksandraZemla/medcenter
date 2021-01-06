@@ -1,0 +1,57 @@
+.diagnosis {
+    width: 100%;
+    padding-top: 20px;
+    background-color: $bg-color-dark;
+    &__container {
+        @extend %grid-container;
+        position: relative;
+        &::before {
+            @extend %triangle;
+        }
+    }
+    &__item {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        overflow: hidden;
+    }
+    &__img {
+        width: 100%;
+        @include mq(desktop) {
+            transition: transform 0.4s ease-in-out;
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+    }
+    &__description {
+        width: 100%;
+        color: #fff;
+        padding: 1rem 0.5rem 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        background-image: linear-gradient(90deg, $dark-color2, $bg-color-dark);
+    }
+    &__title {
+        position: relative;
+        font-size: 1.3rem;
+        text-align: left;
+        @include mq(desktop) {
+            font-size: 1.4rem;
+        }
+        &::after {
+            position: absolute;
+            bottom: -1rem;
+            left: 0;
+            @include line;
+            content: '';
+        }
+    }
+    &__text {
+        margin: 2rem;
+        font-size: 0.9rem;
+        li {
+            @include list-item-medium;
+        } 
+    }
+}

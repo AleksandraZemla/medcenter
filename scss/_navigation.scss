@@ -1,0 +1,121 @@
+.hamburger {
+    position: relative;
+    margin-right: 15px;
+    height: 70px;
+    width: 70px;
+    background-color: transparent;
+    border: none;
+    @include mq(desktop) {
+        display: none;
+    }
+    &__icon {
+        position: absolute;
+        left: 15%;
+        width: 70%;
+        height: 2px;
+        background-color: black;
+        transition: 0.2s ease-in-out;
+        &::before, &::after {
+            position: absolute;
+            left: 0;
+            background-color: black;
+            content: '';
+            width: 100%;
+            height: 100%;
+            transition: 0.3s ease-in-out;
+        }
+        &::before {
+            top: -600%;
+        }
+        &:after {
+            top: 600%;
+        }
+    }
+    &--active {
+        .hamburger__icon {
+            background-color: transparent;
+        }
+        .hamburger__icon::before {
+            transform: translateY(600%) rotate(45deg);
+        }
+        .hamburger__icon::after {
+            transform: translateY(-600%) rotate(-45deg);
+        }
+    }
+}
+
+.nav {
+    position: fixed;
+    z-index: 10;
+    flex-basis: 100%;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 2px 2px 3px  rgba(0, 0, 0, 0.25);
+    &__logo {
+        margin-left: 15px;
+        height: 60px;
+        @include mq(desktop) {
+            margin-left: 60px;
+            height: 70px;
+        }
+    }
+    &__container {
+        opacity: 0;
+        position: absolute;
+        top: 76px;
+        right: -319px;
+        height: calc(100vh - 75px);
+        width: 319px;
+        background-image: linear-gradient($dark-color, $medium-color);
+        border-left: 1px solid $dark-color;
+        transition: 0.3s ease-in-out;
+        will-change: transform opacity;
+        @include mq(desktop) {
+        opacity: 1;
+        position: static;
+        width: auto;
+        height: auto;
+        margin-right: 50px;
+        background-image: none;
+        background-color: transparent;
+        border-left: none;
+        transition: none;
+        }
+        &--active {
+            opacity: 1;
+            transform: translateX(-319px);
+        }
+    }
+    &__list {
+        margin-top: 30px;
+        list-style: none;
+        font-weight: bold;
+        @include mq(desktop) {
+            margin-top: 0;
+            display: flex;
+        }
+    }
+    &__item {
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 4.5rem;
+        @include mq(desktop) {
+            font-size: 0.9rem;
+            margin-left: 30px;
+        }
+    }
+    &__link {
+        display: block;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        @include mq(desktop) {
+            display: inline-block;
+            color: rgb(39, 39, 39);
+        }
+    }
+}

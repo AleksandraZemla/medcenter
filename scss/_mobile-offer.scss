@@ -1,0 +1,26 @@
+.offer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $medium-color;
+    color: #fff;
+    @include mq(tablet) {
+        display: none;
+    }
+    &__img {
+        position: relative;
+        flex-basis: 100%;
+        width: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__description {
+        position: absolute;
+        right: 0;
+        bottom: 12%;
+        padding: 15px;
+        background-image: linear-gradient($dark-color, $medium-color);
+        text-transform: uppercase;
+    }
+}

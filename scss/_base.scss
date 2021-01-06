@@ -1,0 +1,78 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: $bg-color;
+    color: $dark-color;
+    font-size: 15px;
+    font-family: $main-font;
+    @include mq(desktop) {
+        font-size: 1.1rem;
+    }
+}
+
+.main {
+    overflow: hidden;
+}
+
+.section-title {
+    position: relative;
+    @include title-text;
+    font-size: 1.4rem;
+    margin: 1.5rem auto;
+    width: 100%;
+    @include mq(desktop) {
+        margin-top: 4rem;
+        font-size: 1.8rem;
+    }
+    .underline {
+        border-bottom: 4px solid $accent-color;
+    }
+    &--white {
+        color: #fff;
+        margin-top: 20px;
+    }
+    &--triangle {
+        &::after {
+            content: url('assets/trojkat.png');
+            position: absolute;
+            bottom: -60px;
+            left: 42%;
+            z-index: 4;
+            @include mq(tablet) {
+                display: none;
+            }
+        }
+    }
+}
+
+.btn {
+    min-width: 180px;
+    max-width: 250px;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: $accent-color;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 1px 1px darken($accent-color, 20%);
+    letter-spacing: 0.1rem;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 2px 2px 3px  rgba(0, 0, 0, 0.25);
+    &:focus {
+        background-color: darken($accent-color, 9%);
+    }
+    @include mq(desktop) {
+        cursor: pointer;
+        transition: background-color  0.3s ease-in-out, transform 0.4s ease-in-out;
+        &:hover {
+            transform: translateY(-4px);
+            background-color: darken($accent-color, 7%);
+        }
+    }
+}
+
